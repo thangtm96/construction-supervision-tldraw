@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  construction-supervision-tldraw:
+    container_name: construction-supervision-tldraw
+    image: construction-supervision-tldraw:prod
+    restart: always
+    ports:
+      - "5137:5137"
+    networks:
+      - construction-supervision-network
+
+networks:
+  construction-supervision-network:
+    driver: bridge
