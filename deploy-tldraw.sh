@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Load environment variables from .env file if it exists
-if [ -f .env ]; then
+if [ -f .env_tldraw ]; then
     echo "📄 Loading environment variables from .env file..."
     export $(cat .env | grep -v '^#' | xargs)
 else
