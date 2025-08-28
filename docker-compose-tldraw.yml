@@ -6,7 +6,16 @@ services:
     image: construction-supervision-tldraw:prod
     restart: always
     ports:
-      - "5137:5137"
+      - '5173:5173'
+    networks:
+      - construction-supervision-network
+
+  construction-supervision-tldraw-dev:
+    container_name: construction-supervision-tldraw-worker
+    image: construction-supervision-tldraw:worker
+    restart: unless-stopped
+    ports:
+      - '8787:8787'
     networks:
       - construction-supervision-network
 

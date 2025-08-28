@@ -18,16 +18,9 @@ docker build --target build -t construction-supervision-tldraw:build .
 echo "🏗️ Building production image..."
 docker build --target production -t construction-supervision-tldraw:prod .
 
-# Build deployment image
-echo "🚀 Building deployment image..."
-docker build --target deploy -t construction-supervision-tldraw:deploy .
-
-# Deploy to Cloudflare (requires environment variables)
-echo "☁️ Deploying to Cloudflare..."
-docker run --rm \
-  -e CLOUDFLARE_API_TOKEN="$CLOUDFLARE_API_TOKEN" \
-  -e CLOUDFLARE_ACCOUNT_ID="$CLOUDFLARE_ACCOUNT_ID" \
-  construction-supervision-tldraw:deploy
+# Build worker image
+echo "🚀 Building worker image..."
+docker build --target worker -t construction-supervision-tldraw:worker .
 
 # Start production container
 echo "🔄 Starting production container..."

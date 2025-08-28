@@ -26,12 +26,12 @@ RUN yarn global add serve
 EXPOSE 3000
 CMD ["serve", "-s", "dist", "-l", "3000"]
 
-# Deployment stage - use build stage as base
-FROM build AS deploy
+# Development stage - run wrangler dev locally
+FROM build AS worker
 WORKDIR /app
 
-# Install wrangler globally (dependencies already available from build stage)
-RUN yarn global add wrangler
+# Expose Wrangler dev port
+EXPOSE 8787
 
-# Set default command to wrangler deploy
-CMD ["yarn", "wrangler", "deploy"]
+# Use npx to run local wrangler in dev mode
+CMD ["npx", "wrangler", "dev", "--local", "--port", "8787"]
