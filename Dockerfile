@@ -33,5 +33,5 @@ RUN yarn global add serve
 # Copy built files only
 COPY --from=build /app/dist ./dist
 
-EXPOSE 3000
-CMD ["serve", "-s", "dist", "-l", "3000"]
+EXPOSE 5173
+CMD ["serve", "-s", "dist", "-l", "5173"]
