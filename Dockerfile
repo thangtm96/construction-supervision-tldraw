@@ -21,7 +21,7 @@ WORKDIR /app
 EXPOSE 8787
 
 # Run Wrangler dev locally (bind to all interfaces)
-CMD ["npx", "wrangler", "dev", "--local", "--port", "8787", "--host", "0.0.0.0", "--local-protocol", "http"]
+CMD ["npx", "wrangler", "dev", "--host", "0.0.0.0", "--port", "8787"]
 
 # Production stage - small runtime image, only static assets
 FROM node:24-alpine AS production
