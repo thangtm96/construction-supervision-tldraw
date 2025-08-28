@@ -24,7 +24,6 @@ docker build --target worker -t construction-supervision-tldraw:worker .
 
 # Start production container
 echo "🔄 Starting production container..."
-cd ~/deploy
 docker compose -f docker-compose-tldraw.yml down
 docker compose -f docker-compose-tldraw.yml up -d
 
