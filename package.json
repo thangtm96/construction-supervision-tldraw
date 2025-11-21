@@ -2,15 +2,22 @@
 	"name": "tldraw-sync-cloudflare",
 	"private": true,
 	"version": "0.0.0",
-	"author": { "name": "tldraw GB Ltd.", "email": "hello@tldraw.com" },
+	"author": {
+		"name": "tldraw GB Ltd.",
+		"email": "hello@tldraw.com"
+	},
 	"homepage": "https://tldraw.dev",
 	"license": "MIT",
 	"type": "module",
-	"scripts": { "dev": "vite", "build": "tsc && vite build", "preview": "vite preview" },
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview"
+	},
 	"dependencies": {
-		"@tldraw/sync": "^3.15.3",
-		"@tldraw/sync-core": "^3.15.3",
-		"@tldraw/tlschema": "^3.15.3",
+		"@tldraw/sync": "^4.2.0",
+		"@tldraw/sync-core": "^4.2.0",
+		"@tldraw/tlschema": "^4.2.0",
 		"cloudflare-workers-unfurl": "^0.0.7",
 		"itty-router": "^5.0.18",
 		"lodash.throttle": "^4.1.1",
