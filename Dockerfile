@@ -21,7 +21,7 @@ WORKDIR /app
 EXPOSE 8787
 
 # Run Wrangler dev locally (bind to all interfaces)
-CMD ["npx", "wrangler", "dev", "--host", "0.0.0.0", "--port", "8787"]
+CMD ["npx", "wrangler", "dev",  "--ip", "0.0.0.0", "--port", "8787", "--local", "--local-protocol", "http", "--log-level", "debug"]
 
 # Production stage - small runtime image, only static assets
 FROM node:24-alpine AS production
@@ -34,4 +34,4 @@ RUN yarn global add serve
 COPY --from=build /app/dist ./dist
 
 EXPOSE 5173
-CMD ["serve", "-s", "dist", "-l", "5173"]
+CMD ["serve", "-s", "dist/client", "-l", "5173"]
