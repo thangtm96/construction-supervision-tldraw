@@ -10,7 +10,7 @@ function App() {
 	// Create a store connected to multiplayer.
 	const store = useSync({
 		// We need to know the websockets URI...
-		uri: `${window.location.origin}/api/connect/${roomId}`,
+		uri: `https://develop-tldraw-ws.construction-supervision.com/api/connect/${roomId}`,
 		// ...and how to handle static assets like images & videos
 		assets: multiplayerAssetStore,
 	})
