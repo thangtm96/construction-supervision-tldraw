@@ -15,9 +15,9 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@tldraw/sync": "^4.2.0",
-		"@tldraw/sync-core": "^4.2.0",
-		"@tldraw/tlschema": "^4.2.0",
+		"@tldraw/sync": "^3.15.5",
+		"@tldraw/sync-core": "^3.15.5",
+		"@tldraw/tlschema": "^3.15.5",
 		"cloudflare-workers-unfurl": "^0.0.7",
 		"itty-router": "^5.0.18",
 		"lodash.throttle": "^4.1.1",
