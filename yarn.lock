@@ -1621,7 +1621,7 @@
     "@tldraw/state" "3.15.5"
     "@tldraw/utils" "3.15.5"
 
-"@tldraw/sync-core@3.15.5", "@tldraw/sync-core@^3.15.5":
+"@tldraw/sync-core@3.15.5":
   version "3.15.5"
   resolved "https://registry.yarnpkg.com/@tldraw/sync-core/-/sync-core-3.15.5.tgz#6f192fbd32842a32a16c9962792983fe4149edab"
   integrity sha512-FfS4IiPa4HIp5TnFKuDhraM43f0uXYsR8FdQPFOjIwidjk8GY1/Kp7hWXZOWw9JtfP1D/hShao34S4/YlBZRlw==
@@ -1633,7 +1633,7 @@
     nanoevents "^7.0.1"
     ws "^8.18.0"
 
-"@tldraw/sync@^3.15.5":
+"@tldraw/sync@3.15.5":
   version "3.15.5"
   resolved "https://registry.yarnpkg.com/@tldraw/sync/-/sync-3.15.5.tgz#504daead1da13943274d84f629239cc37c673a91"
   integrity sha512-3nnR7ibzyWXB0pSOWt5Col+YSOwF8ZlNQO65D+GOfaHyqDPmnVSbLwM7tx4V0EEzsDSFoEjbLu3nxN1oFzGu5g==
@@ -1646,7 +1646,7 @@
     tldraw "3.15.5"
     ws "^8.18.0"
 
-"@tldraw/tlschema@3.15.5", "@tldraw/tlschema@^3.15.5":
+"@tldraw/tlschema@3.15.5":
   version "3.15.5"
   resolved "https://registry.yarnpkg.com/@tldraw/tlschema/-/tlschema-3.15.5.tgz#1a67c9a636643758edddfc20269ab44294fc6a76"
   integrity sha512-IHOhwXYDdq6+IDkFOXb5rI/O5KAFs/Kq3p9QIK174LvUbsT27Xlzv/ikZe68OafvonNo1QIXuOqQSv+Q40+7Wg==
@@ -2627,7 +2627,7 @@ tippy.js@^6.3.7:
   dependencies:
     "@popperjs/core" "^2.9.0"
 
-tldraw@3.15.5, tldraw@^3.15.3:
+tldraw@3.15.5:
   version "3.15.5"
   resolved "https://registry.yarnpkg.com/tldraw/-/tldraw-3.15.5.tgz#1bfaabad190594f71a6372a66fd8f1f4ae1228a0"
   integrity sha512-lzi69i4aMDRf3edC6DZrbSqYOcQWv0n0QwxfUC1QI7fHfXN5aqEc3ni3SxPfvFNuzwYWyOwZRUWUtoI1MsKRzw==
